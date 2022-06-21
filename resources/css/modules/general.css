@@ -1,0 +1,37 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/client/fonts/Nunito-Regular.ttf"),
+        url("/client/fonts/Nunito-Bold.ttf");
+}
+
+body,
+html {
+    font-family: Nunito;
+    @apply overflow-x-hidden;
+}
+
+button:hover,
+a:hover {
+    @apply opacity-75;
+}
+button:active,
+a:active {
+    @apply opacity-50 transition duration-100 transform scale-95;
+}
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+div:focus {
+    @apply outline-none;
+}
+
+[aria-disabled="true"] {
+    @apply opacity-40 pointer-events-none;
+}
+
+button[disabled=""] {
+    @apply opacity-70 pointer-events-none;
+}
